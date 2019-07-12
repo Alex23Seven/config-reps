@@ -18,11 +18,13 @@ ignore:
   - /webjars/**
   - /doc.html
   - /zipkin/**
+  - /finace/**
 
 swagger:
   client:
     - panda-user-service
     - panda-gen-service
+    - panda-finace-service
 # 关闭默认路由
 zuul:
   ignoredServices: '*'
