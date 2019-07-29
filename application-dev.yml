@@ -1,3 +1,9 @@
+eureka:
+  client:
+    service-url:
+      #defaultZone: http://192.168.1.35:8761/eureka/
+      defaultZone: http://127.0.0.1:8761/eureka/
+
 server:
   tomcat:
     max-threads: 500 # Maximum amount of worker threads.
@@ -20,7 +26,7 @@ spring:
     host: 127.0.0.1
     port: 6379
     password:
-    timeout: 10000
+
   rabbitmq:
     host: 127.0.0.1
     port: 5672
@@ -30,6 +36,8 @@ spring:
     multipart:
       max-file-size: 1000MB
       max-request-size: 1000MB
+  zipkin:
+    base-url: http://localhost:5001
 redis:
   cache:
     expiration: 3601
@@ -73,6 +81,7 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 60000
+
 #关闭验证
 management:
   metrics:

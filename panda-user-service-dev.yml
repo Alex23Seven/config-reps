@@ -45,5 +45,3 @@ mybatis-plus:
 #  level:
 #    com.yukong.panda.user.mapper: debug
 #    com.yukong.panda.common.base.mapper: debug
-
-

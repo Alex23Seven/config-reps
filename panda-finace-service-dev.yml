@@ -11,7 +11,7 @@ mybatis-plus:
   mapper-locations: classpath:/mapper/*Mapper.xml
   typeAliasesPackage: com.yukong.entity
   global-config:
-    db-config:  
+    db-config:
       id-type: AUTO
       field-strategy: NOT_EMPTY
       table-underline: true
